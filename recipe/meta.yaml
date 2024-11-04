@@ -1,5 +1,5 @@
 {% set name = "scisave" %}
-{% set version = "1.3.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
-  sha256: e7aebcd3b93c363f40bf0d4372e529fe060f1001b41530efacce377d767706a3
+  sha256: fd836a2cd566f97ca397e8ed7f38ddb7bc69a35fe12fb17c1ba0159216fb93bd
 
 build:
   noarch: python

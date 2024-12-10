@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
   sha256: 57e5b234c73897eccd990255eda5d50a55015b50aab9aa1a9f52e58c0c7788e6
 
 build:
@@ -31,7 +31,8 @@ test:
   imports:
     - scisave
   requires:
-    - pip
+    - python {{ python_min }}
+    - pip >=24.2
 
 about:
   summary: SciSave - Python Data Loader/Dumper for Science

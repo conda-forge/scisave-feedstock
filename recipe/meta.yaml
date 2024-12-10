@@ -1,5 +1,6 @@
 {% set name = "scisave" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
-  sha256: fd836a2cd566f97ca397e8ed7f38ddb7bc69a35fe12fb17c1ba0159216fb93bd
+  sha256: 57e5b234c73897eccd990255eda5d50a55015b50aab9aa1a9f52e58c0c7788e6
 
 build:
   noarch: python
@@ -16,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.9
-    - setuptools >68.2
-    - wheel >0.41
-    - setuptools-scm >7.1
-    - pip
+    - python {{ python_min }}
+    - setuptools >=68.2
+    - wheel >=0.41
+    - setuptools-scm >=7.1
+    - pip >=24.2
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pyyaml >=6.0
     - numpy >=1.24
 

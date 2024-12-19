@@ -7,7 +7,7 @@ Home: https://github.com/otvam/scisave
 
 Package license: BSD-2-Clause
 
-Summary: SciSave - Data Serialization for Scientific Data
+Summary: SciSave - Serialization/Deserialization for Scientific Data
 
 Development: https://github.com/otvam/scisave
 

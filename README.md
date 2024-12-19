@@ -7,7 +7,7 @@ Home: https://github.com/otvam/scisave
 
 Package license: BSD-2-Clause
 
-Summary: SciSave - Python Data Loader/Dumper for Science
+Summary: SciSave - Data Serialization for Scientific Data
 
 Development: https://github.com/otvam/scisave
 
@@ -16,8 +16,8 @@ Documentation: https://github.com/otvam/scisave
 SciSave is a Python serialization/deserialization module. Specially
 targeted for scientific applications. Load JSON/YAML configuration files.
 Load and write JSON/Pickle data files. Define custom YAML extensions
-(path handling, includes, and environment variables). Define custom JSON
-extensions (complex numbers and numpy array).
+(path handling, includes, env variables, etc.). Define custom JSON
+extensions (complex numbers and numpy arrays).
 
 
 Current build status

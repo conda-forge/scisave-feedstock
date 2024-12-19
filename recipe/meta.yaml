@@ -1,5 +1,5 @@
 {% set name = "scisave" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
-  sha256: 57e5b234c73897eccd990255eda5d50a55015b50aab9aa1a9f52e58c0c7788e6
+  sha256: b74b1de17efa7005ceef97beb2b6b26564bcd3947e6772c7eec693ff4e44b0e0
 
 build:
   noarch: python
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=68.2
-    - wheel >=0.41
-    - setuptools-scm >=7.1
-    - pip >=24.2
+    - setuptools >=75.5
+    - wheel >=0.45
+    - setuptools-scm >=8.1
+    - pip >=24.3
   run:
     - python >={{ python_min }}
     - pyyaml >=6.0
@@ -32,16 +32,16 @@ test:
     - scisave
   requires:
     - python {{ python_min }}
-    - pip >=24.2
+    - pip >=24.3
 
 about:
-  summary: SciSave - Python Data Loader/Dumper for Science
+  summary: SciSave - Data Serialization for Scientific Data
   description: |
     SciSave is a Python serialization/deserialization module. Specially 
     targeted for scientific applications. Load JSON/YAML configuration files. 
     Load and write JSON/Pickle data files. Define custom YAML extensions 
-    (path handling, includes, and environment variables). Define custom JSON 
-    extensions (complex numbers and numpy array).
+    (path handling, includes, env variables, etc.). Define custom JSON 
+    extensions (complex numbers and numpy arrays).
   license: BSD-2-Clause
   license_file: LICENSE.txt
   doc_url: https://github.com/otvam/scisave

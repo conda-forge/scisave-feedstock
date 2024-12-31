@@ -1,5 +1,5 @@
 {% set name = "scisave" %}
-{% set version = "1.4.3" %}
+{% set version = "1.4.4" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/scisave-{{ version }}.tar.gz
-  sha256: ee335128698e039f8a17a5c8ac7cafab86b699894ffe5e853292a59e5d393824
+  sha256: b6dc22e0cb380bd49eebb66d9d9f4be71406c2b0d3cf66b964b2c5d6195c489c
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ test:
     - pip >=24.3
 
 about:
-  summary: SciSave - Serialization/Deserialization for Scientific Data
+  summary: SciSave - Serialization for Scientific Data
   description: |
     SciSave is a Python serialization/deserialization module. Specially 
     targeted for scientific applications. Load JSON/YAML configuration files. 

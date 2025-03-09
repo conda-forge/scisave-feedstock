@@ -13,11 +13,11 @@ Development: https://github.com/otvam/scisave
 
 Documentation: https://github.com/otvam/scisave
 
-SciSave is a Python serialization/deserialization module. Specially
-targeted for scientific applications. Load JSON/YAML configuration files.
-Load and write JSON/Pickle data files. Validate data with JSON schemas.
+SciSave is a Python serialization/deserialization module specially targeted
+for scientific applications. Load and write JSON/MessagePack/Pickle data files.
+Load JSON/YAML configuration files. Validate data with JSON schemas.
 Define custom YAML extensions (path handling, includes, env variables, etc.).
-Define custom JSON extensions (complex numbers and numpy arrays).
+Define custom JSON/MessagePack extensions (complex numbers and numpy arrays).
 
 
 Current build status
